@@ -5,8 +5,6 @@ Version:	3.04
 Release:	4
 License:	non-profit
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	ftp://archive.netscape.com/archive/navigator/3.04/shipping/english/unix/linux12/navigator_complete/%{name}-v304-export.x86-unknown-linux-elf.tar.gz
 Source1:	%{name}3.desktop
 Source2:	%{name}3.xpm
