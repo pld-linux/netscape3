@@ -12,7 +12,7 @@ Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shippi
 Source1:	netscape3.desktop
 Source2:	netscape3.xpm
 ExclusiveArch:	%{ix86}
-Buildroot:	%{tmpdir}/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
