@@ -6,7 +6,6 @@ Release:	1
 Copyright:	non-profit
 Group:		Applications/Network
 Group(pl):	Aplikacje/Sieciowe
-Group(pl):	Aplikacje/Sieciowe
 URL:		http://www.netscape.com
 Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shipping/english/unix/linux12/navigator_complete/%{name}-v304-export.x86-unknown-linux-elf.tar.gz
 Source1:	netscape3.desktop
