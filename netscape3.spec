@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/netscape3/java_301
 %{_libdir}/X11/app-defaults/*
 %{_applnkdir}/Networking/WWW/*
-%{_datadir}/pixmaps/*
+%{_pixmapsdir}/*
 
 %doc README.gz LICENSE.gz
 %doc movemail-src/movemail.c README-movemail.gz
