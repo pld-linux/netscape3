@@ -35,7 +35,9 @@ install netscape $RPM_BUILD_ROOT%{_bindir}/netscape3
 install Netscape.ad $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/Netscape
 install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape
 
-gzip -9nf README LICENSE
+mv movemail/README README-movemail
+
+gzip -9nf README README-movemail LICENSE
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,3 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/netscape/plugins
 %{_libdir}/netscape/java_301
 %doc README.gz LICENSE.gz
+%doc movemail/movemail.c README-movemail.gz
