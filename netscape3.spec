@@ -31,7 +31,7 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_libdir}/netscape3/plugins,%{_bindir}} \
 	$RPM_BUILD_ROOT%{_libdir}/X11/app-defaults \
-	$RPM_BUILD_ROOT%{_applnkdir}/Network/WWW \
+	$RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW \
 	$RPM_BUILD_ROOT%{_datadir}/pixmaps
 	
 install netscape $RPM_BUILD_ROOT%{_bindir}/netscape3
@@ -40,7 +40,7 @@ install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape3
 
 mv movemail-src/README README-movemail
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/WWW
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 gzip -9nf README README-movemail LICENSE
