@@ -31,7 +31,7 @@ install -d $RPM_BUILD_ROOT{%{_libdir}/netscape3/plugins,%{_bindir}} \
 	$RPM_BUILD_ROOT%{_libdir}/X11/app-defaults \
 	$RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW \
 	$RPM_BUILD_ROOT%{_datadir}/pixmaps
-	
+
 install netscape $RPM_BUILD_ROOT%{_bindir}/netscape3
 install Netscape.ad $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/Netscape
 install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape3
