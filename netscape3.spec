@@ -11,7 +11,7 @@ URL:		http://www.netscape.com
 Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shipping/english/unix/linux12/navigator_complete/%{name}-v304-export.x86-unknown-linux-elf.tar.gz
 Source1:	netscape3.desktop
 Source2:	netscape3.xpm
-ExclusiveArch:	i386 i586 i686
+ExclusiveArch:	%{ix86}
 Buildroot:	/tmp/%{name}-%{version}-root
 
 %define _prefix /usr/X11R6
