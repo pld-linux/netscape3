@@ -2,7 +2,7 @@
 Name=Netscape3
 Name[pl]=Netscape3
 Comment=Netscape browser
-Comment[pl]=Przeglądarka Netscape
+Comment[pl]=Przeglądarka WWW Netscape
 Exec=netscape3
 Icon=netscape3.xpm
 Terminal=0
