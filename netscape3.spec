@@ -6,8 +6,9 @@ Release:	1
 Copyright:	non-profit
 Group:		Applications/Network
 Group(pl):	Aplikacje/Sieciowe
+Group(pl):	Aplikacje/Sieciowe
 URL:		http://www.netscape.com
-Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shipping/english/unix/linux12/navigator_complete/netscape-v304-export.x86-unknown-linux-elf.tar.gz
+Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shipping/english/unix/linux12/navigator_complete/%{name}-v304-export.x86-unknown-linux-elf.tar.gz
 ExclusiveArch:	i386 i586 i686
 Buildroot:	/tmp/%{name}-%{version}-root
 
@@ -35,7 +36,7 @@ install netscape $RPM_BUILD_ROOT%{_bindir}/netscape3
 install Netscape.ad $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/Netscape
 install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape
 
-mv movemail/README README-movemail
+mv movemail-src/README README-movemail
 
 gzip -9nf README README-movemail LICENSE
 
@@ -48,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/netscape/plugins
 %{_libdir}/netscape/java_301
 %doc README.gz LICENSE.gz
-%doc movemail/movemail.c README-movemail.gz
+%doc movemail-src/movemail.c README-movemail.gz
