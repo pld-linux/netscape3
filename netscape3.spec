@@ -4,12 +4,12 @@ Name:		netscape
 Version:	3.04
 Release:	2
 Copyright:	non-profit
-Group:		Applications/Network
-Group(pl):	Aplikacje/Sieciowe
-URL:		http://www.netscape.com
+Group:		X11/Applications/Networking
+Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shipping/english/unix/linux12/navigator_complete/%{name}-v304-export.x86-unknown-linux-elf.tar.gz
 Source1:	netscape3.desktop
 Source2:	netscape3.xpm
+URL:		http://www.netscape.com/
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
