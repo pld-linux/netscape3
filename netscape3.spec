@@ -56,6 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %dir %{_libdir}/netscape/plugins
 %{_libdir}/netscape/java_301
+%{_libdir}/X11/app-defaults/*
 %{_applnkdir}/Networking/WWW/*
 %{_datadir}/pixmaps/*
 
