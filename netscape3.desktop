@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Netscape3
+Name[pl]=Netscape3
+Comment=Netscape browser
+Comment[pl]=Przegl±darka Netscape
+Exec=netscape3
+Icon=netscape3.xpm
+Terminal=0
+Type=Application
