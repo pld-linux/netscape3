@@ -12,10 +12,9 @@ Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shippi
 Source1:	netscape3.desktop
 Source2:	netscape3.xpm
 ExclusiveArch:	%{ix86}
-Buildroot:	/tmp/%{name}-%{version}-root
+Buildroot:	%{tmpdir}/%{name}-%{version}-root
 
-%define _prefix /usr/X11R6
-%define _applnkdir %{_datadir}/applnk
+%define		_prefix		/usr/X11R6
 
 %description
 An old version of Netscape WWW browser.
@@ -31,7 +30,7 @@ Stara wersja przegl±darki WWW Netscape'a
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_libdir}/netscape/plugins,%{_bindir}} \
+install -d $RPM_BUILD_ROOT{%{_libdir}/netscape3/plugins,%{_bindir}} \
 	$RPM_BUILD_ROOT%{_libdir}/X11/app-defaults \
 	$RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW \
 	$RPM_BUILD_ROOT%{_datadir}/pixmaps
@@ -55,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/netscape3
 
 %dir %{_libdir}/netscape3/plugins
-%{_libdir}/netscape/java_301
+%{_libdir}/netscape3/java_301
 %{_libdir}/X11/app-defaults/*
 %{_applnkdir}/Networking/WWW/*
 %{_datadir}/pixmaps/*
