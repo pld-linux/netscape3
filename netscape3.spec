@@ -2,7 +2,7 @@ Summary:	Netscape 3.04 - good, old web browser
 Summary(pl):	Netscape 3.04 - stara, dobra przegl±darka WWW
 Name:		netscape
 Version:	3.04
-Release:	1
+Release:	2
 Copyright:	non-profit
 Group:		Applications/Network
 Group(pl):	Aplikacje/Sieciowe
@@ -31,7 +31,7 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_libdir}/netscape3/plugins,%{_bindir}} \
 	$RPM_BUILD_ROOT%{_libdir}/X11/app-defaults \
-	$RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW \
+	$RPM_BUILD_ROOT%{_applnkdir}/Network/WWW \
 	$RPM_BUILD_ROOT%{_datadir}/pixmaps
 	
 install netscape $RPM_BUILD_ROOT%{_bindir}/netscape3
@@ -40,7 +40,7 @@ install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape3
 
 mv movemail-src/README README-movemail
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/WWW
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 gzip -9nf README README-movemail LICENSE
@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/netscape3/plugins
 %{_libdir}/netscape3/java_301
 %{_libdir}/X11/app-defaults/*
-%{_applnkdir}/Networking/WWW/*
+%{_applnkdir}/Network/WWW/*
 %{_datadir}/pixmaps/*
 
 %doc README.gz LICENSE.gz
