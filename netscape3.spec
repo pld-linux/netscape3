@@ -38,7 +38,7 @@ install -d $RPM_BUILD_ROOT{%{_libdir}/netscape/plugins,%{_bindir}} \
 	
 install netscape $RPM_BUILD_ROOT%{_bindir}/netscape3
 install Netscape.ad $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/Netscape
-install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape
+install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape3
 
 mv movemail-src/README README-movemail
 
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/netscape3
 
-%dir %{_libdir}/netscape/plugins
+%dir %{_libdir}/netscape3/plugins
 %{_libdir}/netscape/java_301
 %{_libdir}/X11/app-defaults/*
 %{_applnkdir}/Networking/WWW/*
