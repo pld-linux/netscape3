@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/netscape3/plugins
 %{_libdir}/netscape3/java_301
 %{_libdir}/X11/app-defaults/*
-%{_applnkdir}/Network/WWW/*
+%{_applnkdir}/Networking/WWW/*
 %{_datadir}/pixmaps/*
 
 %doc README.gz LICENSE.gz
