@@ -1,8 +1,8 @@
 Summary:	Netscape 3.04 - good, old web browser
 Summary(pl):	Netscape 3.04 - stara, dobra przegl±darka WWW
-Name:		netscape
+Name:		netscape3
 Version:	3.04
-Release:	3
+Release:	4
 License:	non-profit
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
@@ -11,6 +11,7 @@ Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shippi
 Source1:	%{name}3.desktop
 Source2:	%{name}3.xpm
 URL:		http://www.netscape.com/
+Obsoletes:	netscape < 4
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
