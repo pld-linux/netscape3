@@ -6,6 +6,7 @@ Release:	4
 License:	non-profit
 Group:		X11/Applications/Networking
 Source0:	ftp://archive.netscape.com/archive/navigator/3.04/shipping/english/unix/linux12/navigator_complete/%{name}-v304-export.x86-unknown-linux-elf.tar.gz
+# Source0-md5:	c530b25d3442a05741d34f884b2128f1
 Source1:	%{name}3.desktop
 Source2:	%{name}3.xpm
 URL:		http://www.netscape.com/
