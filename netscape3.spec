@@ -3,7 +3,7 @@ Summary(pl):	Netscape 3.04 - stara, dobra przegl±darka WWW
 Name:		netscape
 Version:	3.04
 Release:	2
-Copyright:	non-profit
+License:	non-profit
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shipping/english/unix/linux12/navigator_complete/%{name}-v304-export.x86-unknown-linux-elf.tar.gz
@@ -24,8 +24,6 @@ Stara wersja przegl±darki WWW Netscape'a
 %prep
 %setup -q -c
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -38,7 +36,7 @@ install netscape $RPM_BUILD_ROOT%{_bindir}/netscape3
 install Netscape.ad $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/Netscape
 install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape3
 
-mv movemail-src/README README-movemail
+mv -f movemail-src/README README-movemail
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
