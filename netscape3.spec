@@ -41,21 +41,16 @@ mv -f movemail-src/README README-movemail
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
-gzip -9nf README README-movemail LICENSE
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README* LICENSE movemail-src/movemail.c
 %attr(755,root,root) %{_bindir}/netscape3
-
 %dir %{_libdir}/netscape3
 %dir %{_libdir}/netscape3/plugins
 %{_libdir}/netscape3/java_301
 %{_libdir}/X11/app-defaults/*
 %{_applnkdir}/Networking/WWW/*
 %{_pixmapsdir}/*
-
-%doc README.gz LICENSE.gz
-%doc movemail-src/movemail.c README-movemail.gz
