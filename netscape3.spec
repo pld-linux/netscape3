@@ -42,8 +42,8 @@ install java_301 $RPM_BUILD_ROOT%{_libdir}/netscape
 
 mv movemail-src/README README-movemail
 
-install %{SOURCE1} %{_applnkdir}/Networking/WWW
-install %{SOURCE2} %{_datadir}/pixmaps
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Networking/WWW
+install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 gzip -9nf README README-movemail LICENSE
 
