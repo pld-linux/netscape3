@@ -1,6 +1,6 @@
 Summary:	Netscape 3.04 - good, old web browser
 Summary(pl):	Netscape 3.04 - stara, dobra przegl±darka WWW
-Name:		netscape3
+Name:		netscape
 Version:	3.04
 Release:	4
 License:	non-profit
