@@ -52,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/netscape3
 
+%dir %{_libdir}/netscape3
 %dir %{_libdir}/netscape3/plugins
 %{_libdir}/netscape3/java_301
 %{_libdir}/X11/app-defaults/*
