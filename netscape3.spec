@@ -10,6 +10,7 @@ Source0:	ftp://archive.netscape.com/archive/navigator/3.04/shipping/english/unix
 Source1:	%{name}3.desktop
 Source2:	%{name}3.xpm
 URL:		http://www.netscape.com/
+Provides:	wwwbrowser
 Obsoletes:	netscape < 4
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
