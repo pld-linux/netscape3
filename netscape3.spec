@@ -1,5 +1,5 @@
 Summary:	Netscape 3.04 - good, old web browser
-Summary(pl):	Netscape 3.04 - stara, dobra przegl±darka WWW
+Summary(pl.UTF-8):   Netscape 3.04 - stara, dobra przeglÄ…darka WWW
 Name:		netscape
 Version:	3.04
 Release:	4
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 An old version of Netscape WWW browser.
 
-%description -l pl
-Stara wersja przegl±darki WWW Netscape'a
+%description -l pl.UTF-8
+Stara wersja przeglÄ…darki WWW Netscape'a
 
 %prep
 %setup -q -c
