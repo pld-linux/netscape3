@@ -1,5 +1,5 @@
 Summary:	Netscape 3.04 - good, old web browser
-Summary(pl.UTF-8):   Netscape 3.04 - stara, dobra przeglądarka WWW
+Summary(pl.UTF-8):	Netscape 3.04 - stara, dobra przeglądarka WWW
 Name:		netscape
 Version:	3.04
 Release:	4
